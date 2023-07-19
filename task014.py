@@ -5,11 +5,11 @@ count = 0
 squar = 2
 
 
-for _ in range (number):
-    if count < number:
-        squar = squar * squar
-        count += 1
-        
+for i in range (number):
+    if i < number:
+        i = i * squar
+        i += 1
+print(i)
 
 
 
