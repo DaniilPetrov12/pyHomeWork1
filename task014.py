@@ -6,10 +6,11 @@ squar = 2
 
 
 for i in range (number):
-    if i < number:
-        i = i * squar
-        i += 1
-print(i)
+    count = squar**i
+    if count < number:
+    
+        print(count)    
+    
 
 
 
