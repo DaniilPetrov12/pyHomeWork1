@@ -4,8 +4,14 @@
 # Помогите Кате отгадать задуманные Петей числа.
 
 
-num1 = int (input('Введите первое загаданное число  = '))
-num2 = int (input('Введите второе загаданное число  = '))
-s = num1 + num2
-p = num1 * num2
+num1 = int (input('Введите сумму загаданных чисел  = '))
+num2 = int (input('Введите произведение загаданных чисел  = '))
+
+dis = num1 * num1 - 4 * num2
+if dis > 0:
+ fnumber1 = int (num1 - dis**0.5)//2
+ fnumber2 = int (num1 + dis**0.5)//2
+ print(f'Загаданные числа {fnumber1,fnumber2}')
+else: 
+ print('нет решения')
 
